@@ -1,0 +1,51 @@
+<!DOCTYPE html
+><!--이 내용이 문서라는 것을 알려줌-->
+<html lang="en">
+  <head>
+    <!--머리에 해당하는 부분 사람들에게는 안보임 정보를 입력하는 곳-->
+    <meta charset="utf-8" />
+    <!-- meta태그는 브라우저에 전달하는 추가정보 -->
+    <!--어떤 언어로 작성되는지를 알려줌-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--작성자가 누군지를 알려줌-->
+    <meta http-equiv="X-UA-Compatibla" content="ie=edge" />
+    <!--인터넷 검색을 했을때 밑부분에 몇줄나와있는 설명-->
+    <title>Box Model</title>
+    <!--박스 생성-->
+    <style>
+      body,
+      html {
+        padding: 0;
+        margin: 0;
+        background-color: green;
+        height: 100%;
+      }
+      .box {
+        background-color: yellow;
+        width: 50%;
+        height: 50%;
+        padding: 20px; /*박스의 상하좌우전부다20*/
+        padding: 20px, 10px; /*앞부분은 상하, 뒷부분은 좌우*/
+        padding: 20px, 10px, 20px, 10px; /*상,우,하,좌 시계방향*/
+        padding-top: 50px;
+        padding-left: 50px;
+        margin-top: 50px;
+        margin-left: 50px;
+      }
+      .inside-box {
+        background-color: blue;
+        width: 50%;
+        height: 50%;
+        border-width: 5px;
+        border-color: red;
+        border-style: dashed;
+        border: 5px dashed red; /*폭, 스타일, 색*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="inside-box"></div>
+    </div>
+  </body>
+</html>
