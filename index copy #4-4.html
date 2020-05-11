@@ -1,0 +1,44 @@
+<!DOCTYPE html
+><!--이 내용이 문서라는 것을 알려줌-->
+<html lang="en">
+  <head>
+    <!--머리에 해당하는 부분 사람들에게는 안보임 정보를 입력하는 곳-->
+    <meta charset="utf-8" />
+    <!-- meta태그는 브라우저에 전달하는 추가정보 -->
+    <!--어떤 언어로 작성되는지를 알려줌-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--작성자가 누군지를 알려줌-->
+    <meta http-equiv="X-UA-Compatibla" content="ie=edge" />
+    <!--인터넷 검색을 했을때 밑부분에 몇줄나와있는 설명-->
+    <title>Transformaitons</title>
+    <!--변환작업-->
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation: 3s scale-and-rotate-square ease-in-out infinite;
+      } /* 밑에 작성한 애니메이션을 사용할려면 animation을 사용해야함*/
+      @keyframes scale-and-rotate-square {
+        /*keyframes가 애니매이션 생성, 그리고 뒤에 이름작성*/
+        0% /*0%~100% 사이 값을 넣고 변환되는것을 작성함*/ {
+          transform: none;
+        }
+        33% {
+          transform: rotate(1turn) scale(0.5, 0.5);
+          background-color: white;
+        }
+        66% {
+          transform: none;
+          background-color: black;
+        }
+        100% {
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
