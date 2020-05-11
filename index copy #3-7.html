@@ -1,0 +1,54 @@
+<!DOCTYPE html
+><!--이 내용이 문서라는 것을 알려줌-->
+<html lang="en">
+  <head>
+    <!--머리에 해당하는 부분 사람들에게는 안보임 정보를 입력하는 곳-->
+    <meta charset="utf-8" />
+    <!-- meta태그는 브라우저에 전달하는 추가정보 -->
+    <!--어떤 언어로 작성되는지를 알려줌-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--작성자가 누군지를 알려줌-->
+    <meta http-equiv="X-UA-Compatibla" content="ie=edge" />
+    <!--인터넷 검색을 했을때 밑부분에 몇줄나와있는 설명-->
+    <title>Flex</title>
+    <!--박스 혹은 공간을 자유자제로 위치를 바꿈-->
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      .father {
+        display: flex; /*플렉스를 쓰면 하위 박스들은 박스가 아니게됨*/
+        justify-content: space-between; /*수평으로 적용*/
+        align-items: flex-start; /*수직으로 적용*/
+        flex-direction: row; /*방향설정, 디폴트값은 row, 이 방향을 기준으로 justify와 align가 결정*/
+        height: 100%;
+        flex-wrap: nowrap; /*하위박스들의 크기를 바꾸지않고 위치를 밑으로 내려버림*/
+      }
+      .box {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border: black 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div>
+    </div>
+  </body>
+</html>
