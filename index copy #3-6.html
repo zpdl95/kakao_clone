@@ -1,0 +1,68 @@
+<!DOCTYPE html
+><!--이 내용이 문서라는 것을 알려줌-->
+<html lang="en">
+  <head>
+    <!--머리에 해당하는 부분 사람들에게는 안보임 정보를 입력하는 곳-->
+    <meta charset="utf-8" />
+    <!-- meta태그는 브라우저에 전달하는 추가정보 -->
+    <!--어떤 언어로 작성되는지를 알려줌-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--작성자가 누군지를 알려줌-->
+    <meta http-equiv="X-UA-Compatibla" content="ie=edge" />
+    <!--인터넷 검색을 했을때 밑부분에 몇줄나와있는 설명-->
+    <title>Position</title>
+    <!--박스의 위치 설정-->
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 400%;
+        background-color: red;
+      }
+      /* Posiotion Fixed
+      #boxOne {
+        height: 300px; 단위값은 px, % 둘중 하나
+        width: 300px;
+        background-color: yellow;
+        position: static; 기본 디폴트값, 페이지에 지정된 위치에 있음
+        top: 10px;
+      }
+      /*#boxTwo {
+        height: 300px;
+        width: 300px;
+        background-color: green;
+        position: fixed; 화면에 고정시킴
+      }*/
+      .abs-box {
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+        position: relative; 상대적포지션은 다른 박스의 부모포지션이 됨
+      }
+      .abs-child {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        position: absolute; 앱솔루트포지션은 부모관계포지션이 없으면 본문의 위치값을 잡는다
+        right: 10px;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="abs-box">
+      <div class="abs-child"></div>
+    </div>
+    <!--Position Fixed
+      <div id="boxOne">
+      <div class="box-child"></div>
+    </div>
+    <div id="boxTwo">
+      <div class="box-child"></div>
+    </div>-->
+  </body>
+</html>
